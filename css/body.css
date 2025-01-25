@@ -1,0 +1,236 @@
+
+
+/* ===================================
+    Google font
+====================================== */
+
+@import url('https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css');/*나눔스퀘어 네오폰트 한글*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');/*Noto Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap'); /*Noto Sans Japanese*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+SC&display=swap'); /*Noto Sans Simplified Chinese*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap'); /*Noto Sans Thai*/
+
+/* ===================================
+    Reset
+====================================== */
+
+
+
+
+* {margin:0px; padding:0px;}
+body{ font-family: 'NanumSquareNeo', sans-serif; -webkit-font-smoothing: antialiased;  
+font-smoothing: antialiased; font-size:30px;}
+body, html { width:1080px; height: 1920px; -moz-osx-font-smoothing: grayscale; background:#191919;}
+a, a:active, a:focus { color: #6f6f6f; text-decoration: none; }
+a:hover, a:active{text-decoration: none;}
+a:focus, a:active, button:focus, button:active,.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {outline: none;}
+img {max-width:100%; height:auto; }
+video { background-size: cover; display: table-cell; vertical-align: middle; width: 100%; }
+
+iframe { border: 0;}
+p {margin: 0 0 25px}
+b, strong { font-weight: 600;}
+.last-paragraph-no-margin p:last-of-type {margin-bottom:0}
+.alt-font strong {font-weight: 700 }
+ul, ol, dl {list-style-position: outside; margin-bottom: 25px}
+*{transition-timing-function: ease-in-out; -ms-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -webkit-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out; transition-duration: .2s; -ms-transition-duration: .2s; -moz-transition-duration: .2s; -webkit-transition-duration: .2s; -o-transition-duration: .2s;}
+*:hover{transition-timing-function: ease-in-out; -ms-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -webkit-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out; transition-duration: .2s; -ms-transition-duration: .2s; -moz-transition-duration: .2s; -webkit-transition-duration: .2s; -o-transition-duration: .2s; }
+::selection { color: #000; background:#dbdbdb; }
+::-moz-selection { color:#000; background:#dbdbdb; }
+::-webkit-input-placeholder { color: #6f6f6f; text-overflow: ellipsis;}
+::-moz-placeholder { color: #6f6f6f; text-overflow: ellipsis; opacity:1;} 
+:-ms-input-placeholder { color: #6f6f6f; text-overflow: ellipsis; opacity:1;}
+
+.text-center {text-align:center;}
+.position-relative {position:relative!important;}
+.position-absolute {position:absolute!important;}
+.display-inline-block {display:inline-block}
+.text-blue {color:#70ECFF;}
+.text-white {color:#ffffff}
+.font-en {font-family: 'Noto Sans', sans-serif;}
+.font-jp {font-family: 'Noto Sans JP', sans-serif}
+.font-cn {font-family: 'Noto Sans SC', sans-serif}
+.font-th {font-family: 'Noto Sans Thai', sans-serif}
+.text-italic {font-style:italic}
+.text400 {font-weight:400}
+
+/**----------- Header -------------**/
+header {width:100%; height:160px; padding:0px; margin:0px; text-align: center; overflow:hidden;
+    background-image:url('../images/header_bg.png')!important;
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+
+/**----------- Section_video -------------**/
+.bg_video {width:100%; height:540px; z-index:555!important;}
+.bg_video_content {width:100%; height:100%; object-fit:cover; z-index:999!important;/*cover와 동일(HTML 요소 or 비디오와 작동)*/}
+
+
+/**----------- Section_language -------------**/
+.menu_language {width:100%; background:black; text-align:center; z-index:555;}
+.menu_language a {
+    display: inline-block; opacity: 0.5;
+    width: 143px; height: 127px;
+    justify-content: center; align-items: center;
+    padding:0px; margin:0px 10px;
+    color: #FFDEFB;
+    font-family: "NanumSquareNeo"; font-size: 30px; font-style: normal;
+    font-weight: 800; line-height: 125px;
+    border-bottom:5px solid;
+    border-image: linear-gradient(to right, #6CD3E900 0%, #6CD3E900 50%, #6CD3E900 100%);
+    border-image-slice: 1;}
+.menu_language a.vn {
+    font-size: 30px; letter-spacing: -1px;}
+.menu_language a:hover {color:#00F2FF; opacity: 0.5;
+    border-image: linear-gradient(to right, #6CD3E900 0%, #84E9FF 50%, #6CD3E900 100%);
+    border-image-slice: 1;
+    text-shadow: 0px 0px 40px rgba(112, 236, 255, 1), 0px 0px 40px #70ECFF;
+
+}
+.menu_language a:active, .menu_language a.active {color:#00F2FF; opacity: 1;
+    border-image: linear-gradient(to right, #6CD3E900 0%, #84E9FF 50%, #6CD3E900 100%);
+    border-image-slice: 1;
+    text-shadow: 0px 0px 40px rgba(112, 236, 255, 1), 0px 0px 40px #70ECFF;
+}
+
+
+/**----------- Contents -------------**/
+.contents_wrap {width:100%; height:1096px; position:relative; overflow:hidden;}
+.contents {width:100%; height:100%; position:absolute; top:0px; left:0px;
+    background:rgba(0,0,0,0.7);/*마지막 값을 낮게 설정하면 할 수록 동영상 배경이 더 진해짐*/}
+.con_menu {width:100%; padding-top:15px; 
+    background: linear-gradient(180deg, rgba(25, 25, 25, 0.8) 50%, rgba(25, 25, 25, 0.00) 100%);
+    text-align: center; text-align:center;}
+.con_menu a {display:inline-block; opacity:0.5;
+    width:306px; height:120px; margin:0px;
+    line-height:128px;
+    font-family: "NanumSquareNeo"; color: #B8B8B8;
+    text-align: center;
+    font-size: 38px; font-weight: 800; font-style: normal;}
+.con_menu a:hover {color:#70ECFF; opacity:0.7;
+    text-shadow: 0px 0px 40px rgba(112, 236, 255, 0.7), 0px 0px 40px #70ECFF;
+}
+.con_menu a:active, .con_menu a.active{color:#70ECFF; opacity:1;
+    text-shadow: 0px 0px 40px rgba(112, 236, 255, 0.7), 0px 0px 40px #70ECFF;
+}
+.con_menu div img {margin-bottom:-10px; opacity:0.5;}
+
+.info_wrap {position:relative; height:961px}
+.group01, .group02, .group03, .group04 {width:100%; text-align: center;}
+.group01 img {margin-top:-25px; z-index:10}
+.group01 p {margin-top:-60px; 
+    font-size:34px; font-weight: bold;
+    margin-bottom:50px}
+.group02, .group04 {font-size:30px; line-height:155%;}
+.group02 {margin-bottom:0px}
+.group03 {width:100%; height:340px; font-size:30px; font-weight:600; line-height: 160%; margin:0 auto;
+    position:relative;
+    background-image: url(../images/neonbox.png);
+    background-size: cover;
+    margin-bottom:30px;}
+.group03 .neonbox {width:886px; height:auto; box-sizing: border-box;
+    position:absolute; top:40px; border-radius: 20px;
+    margin:0px 90px; padding:35px 0 0;}
+.group03 .neonbox ul {list-style-type: disc; text-align: left;
+    margin:0px 0 20px; padding:0px;}
+.group03 .neonbox ul li {margin-left:90px}
+.group03 .neonbox .text-blue {font-size:28px; font-weight:500}
+
+.group_bt {position:absolute; bottom:0px; left:0px; width:100%; opacity:1;}
+.group_bt .wrapwrap {width:100%; height:146px; position:relative}
+.group_bt .left {position:absolute; bottom:0px; left:0px;}
+.group_bt .right {position:absolute; bottom:0px; right:0px; transform: scaleX(-1)}
+.group_bt img.blur {filter: blur(30px); -webkit-filter: blur(30px);}
+
+
+.tabmenu{max-width:960px; margin: 30px auto 0; position:relative;}
+.tabmenu ul{position: relative; list-style:none; text-align: center;}
+.tabmenu ul li{
+    display: inline-block; width:184px; text-align:center; 
+    background :transparent; 
+    border-radius: 60px;
+    font-size:30px; font-weight:bold; 
+    color:#FFDEFB;
+    border: 2px solid #FFDEFB;
+    margin:0 10px;
+}
+.tabmenu label{
+  display:block;
+  width:100%; line-height:54px;
+  cursor: pointer;
+}
+.tabmenu input{display:none;}
+.tabCon{
+    display:none; width: 100%; position:absolute; left:0; top:110px; 
+    text-align:left;
+    box-sizing: border-box;}
+.tabmenu input:checked ~ label{
+    background:#FFDEFB; 
+    line-height:80px; border-radius: 60px;
+    font-size:30px; font-weight:bold; 
+    color:black;
+    line-height:54px;
+    box-shadow: 0px 0px 40px 5px #ff45e9;}
+.tabmenu input:checked ~ .tabCon{display:block;}
+
+
+.tabCon .menu_left, .tabCon .menu_right, 
+.tabCon .menu_left50, .tabCon .menu_right50 {height:100%;}
+.tabCon .menu_left {float:left; width:550px;}
+.tabCon .menu_right {float:right; width:380px;}
+.tabCon .menu_left50 {float:left; width:468px;}
+.tabCon .menu_right50 {float:right; width:468px;}
+.menu_order {margin-bottom:38px}
+.menu_order h4 {font-size:28px; margin-bottom:15px;}
+.menu_order p {font-size:22px; line-height:165%}
+.price {color:#EDAADF; font-size:22px;}
+.price_stick {opacity:0.7; display:inline-block; margin:0 15px 0 24px;}
+
+.menu_special {width:100%; height:auto; margin-top:90px;
+    display: flex;
+    padding: 34px 0px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.00);
+    background: linear-gradient(151deg, rgba(255, 255, 255, 0.20) 25.26%, rgba(255, 255, 255, 0.08) 89.73%);
+    backdrop-filter: blur(15px);} 
+.menu_special .promo {display: block; overflow: hidden;
+    width:100%; text-align: center;
+    padding: 10px 0px; 
+    background: #FFDEFB; border:1px solid #FFDEFB; 
+    box-shadow: 0px 0px 40px 5px #ff45e9;
+    font-size:28px; color:black; letter-spacing: -0.6px;}
+.menu_special .menu_order {margin-bottom:0px!important}
+
+.tabCon .menu_right50 .menu_special {margin-top:20px!important; gap:20px;
+    padding: 20px 0px 0px;}
+.tabCon .menu_right50 .menu_special p {font-size:23px}
+
+
+/*----------- Skip 화면 (대기화면) ----------*/
+
+.bg_skip {width:1080px; height:1920px;
+    position:relative;}
+a.skip_touch {width:1080px; height:100%; display: block;
+    position:absolute; top:0%; left:0px;}
+.skip_text, .skip_text2 {position:absolute;width:1080px; top:50%; left:0px;
+    font-size:30px; color:white; text-align:center;
+    margin-top:-35px;}
+.skip_text {text-shadow: 0px 0px 40px #ff45e9; 
+    animation: blink 2.2s infinite;}
+.skip_text2 {text-shadow: 0px 0px 20px black;}
+.skip_text h4,
+.skip_text2 h4 {font-size:35px; margin-bottom:25px}
+@keyframes blink {
+    0% {
+      opacity: 1.2;
+    }
+    50% {
+      opacity: 0.4;
+    }
+    100% {
+      opacity: 1.2;
+    }
+  }
